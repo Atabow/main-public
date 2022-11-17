@@ -1,7 +1,7 @@
 param(
     [Parameter(Mandatory=$true, HelpMessage='File name.')]
     [ValidateNotNull()]
-    [string] $FileName,
+    [string] $FileName
 )
 
 $LogFilePath = "C:\CustomScriptExtension.{0}.log" -f [guid]::NewGuid().ToString()
